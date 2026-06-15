@@ -243,31 +243,57 @@
           </div>
           <ul>
             <li>
-              Built the core LangGraph agent with 35+ tools (file CRUD, search-replace, package management, environment setup, database connect, web search/fetch, bash execution, screenshot verification) orchestrating Claude Opus 4.7/Sonnet 4.6 with extended thinking and Anthropic prompt caching.
+              Built the core LangGraph agent with 35+ tools (file CRUD,
+              search-replace, package management, environment setup, database
+              connect, web search/fetch, bash execution, screenshot
+              verification) orchestrating Claude Opus 4.7/Sonnet 4.6 with
+              extended thinking and Anthropic prompt caching.
             </li>
             <li>
-              Developed specialized agent skills: Design Skill (UI/UX direction with brand extraction), Image Generation Skill (FLUX + GPT Image), Screenshot Verify Skill (Gemini Flash vision-based UI validation), Testing Skill (Playwright CLI functional testing with structured pass/fail reports), Security Skill, Web Extract Skill, and Support Skill with RAG.
+              Developed specialized agent skills: Design Skill (UI/UX direction
+              with brand extraction), Image Generation Skill (FLUX + GPT Image),
+              Screenshot Verify Skill (Gemini Flash vision-based UI validation),
+              Testing Skill (Playwright CLI functional testing with structured
+              pass/fail reports), Security Skill, Web Extract Skill, and Support
+              Skill with RAG.
             </li>
             <li>
-              Engineered smart model selector — dynamically routes users between Opus and Sonnet based on task complexity classification (GPT-4.1 Nano), cache state (cold/warm), and cost optimization, saving ~40% on inference costs.
+              Engineered smart model selector — dynamically routes users between
+              Opus and Sonnet based on task complexity classification (GPT-4.1
+              Nano), cache state (cold/warm), and cost optimization, saving ~40%
+              on inference costs.
             </li>
             <li>
-              Built Session Knowledge Graph for token-efficient cold-start recovery — tracks files, errors, requirements, features, decisions, and packages as a structured graph, replacing lossy text summaries when Anthropic cache expires.
+              Built Session Knowledge Graph for token-efficient cold-start
+              recovery — tracks files, errors, requirements, features,
+              decisions, and packages as a structured graph, replacing lossy
+              text summaries when Anthropic cache expires.
             </li>
             <li>
-              Architected MCP (Model Context Protocol) sandbox server with Kubernetes-based isolated project environments — per-user sandboxes with port allocation, checkpoint/restore, and DigitalOcean Spaces persistence.
+              Architected MCP (Model Context Protocol) sandbox server with
+              Kubernetes-based isolated project environments — per-user
+              sandboxes with port allocation, checkpoint/restore, and
+              DigitalOcean Spaces persistence.
             </li>
             <li>
-              Built Anthropic prompt cache warmer service — keeps cache alive 24/7 with periodic API calls every 4 minutes, ensuring 90% cheaper cache_read pricing for all users organization-wide.
+              Built Anthropic prompt cache warmer service — keeps cache alive
+              24/7 with periodic API calls every 4 minutes, ensuring 90% cheaper
+              cache_read pricing for all users organization-wide.
             </li>
             <li>
-              Developed the chat UI with React (Vite): real-time SSE streaming, AgentActivity/AgentTimeline components, CheckpointPanel, PreviewPanel with live app preview, MultiQuestionWizard for human-in-the-loop interrupts, and LogsModal.
+              Developed the chat UI with React (Vite): real-time SSE streaming,
+              AgentActivity/AgentTimeline components, CheckpointPanel,
+              PreviewPanel with live app preview, MultiQuestionWizard for
+              human-in-the-loop interrupts, and LogsModal.
             </li>
             <li>
-              Built NestJS backend with Firebase auth, Stripe billing (credit-based), GitHub integration (repo sync, push), Novu notifications, team/workspace management, and MCP tool registry.
+              Built NestJS backend with Firebase auth, Stripe billing
+              (credit-based), GitHub integration (repo sync, push), Novu
+              notifications, team/workspace management, and MCP tool registry.
             </li>
             <li>
-              Integrated Grafana for distributed tracing and Langfuse for prompt versioning, cost tracking, and observability across LLM pipelines.
+              Integrated Grafana for distributed tracing and Langfuse for prompt
+              versioning, cost tracking, and observability across LLM pipelines.
             </li>
           </ul>
 

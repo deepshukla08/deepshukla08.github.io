@@ -19,13 +19,15 @@ const projects = [
   {
     title: "ReelUp AI Platform",
     description:
-      "AI content generation platform with 15+ tools — image generation, video creation, voice cloning, AI influencers, and more. Handles thousands of async jobs daily via Redis queues and ARQ workers.",
+      "AI content generation platform with 16 full-page tools — AI Ad Studio, Fashion Engine, Image Editor, Multi-Angle Shots, Visual Canvas, Video Generation, Influencer Studio, and more. Processes thousands of async jobs daily across 20+ Redis/ARQ workers.",
     tech: ["Next.js", "Python", "FastAPI", "Redis", "PostgreSQL", "AWS"],
     highlights: [
-      "Credit-based billing with Stripe",
-      "Lot-draining algorithm for credits",
-      "SSE-based real-time progress streaming",
-      "Multi-model orchestration (Flux, Kling, Veo, ElevenLabs)",
+      "6 LangGraph agent workflows: UGC Generator, Script Gen, Selfie UGC, Talking Head, Fashion Try-On",
+      "16 full-page UIs: Ad Studio, Fashion Engine (8-step wizard), Image Editor (mask canvas), Visual Canvas (React Flow node editor)",
+      "15+ AI provider integrations: GPT Image 2, Seedance 2.0, Kling V3, HeyGen, Creatify, Topaz, FLUX 2",
+      "Generation orchestrator with idempotency, concurrency limits, and SSE progress streaming",
+      "Lot-based credit system with atomic PostgreSQL, priority draining & automatic refunds",
+      "Feature-driven frontend: Zustand stores, React Query, WebSocket real-time updates, reusable component library",
     ],
     link: null,
     github: null,
