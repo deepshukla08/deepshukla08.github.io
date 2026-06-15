@@ -33,7 +33,7 @@ export function Header() {
         </ul>
         <div className="flex items-center gap-3">
           <a
-            href="/Deep_Shukla_Resume.html"
+            href="/resume.html"
             download="Deep_Shukla_Resume.html"
             className="rounded-lg border border-accent bg-accent/10 px-4 py-2 text-sm font-medium text-accent-light transition-colors hover:bg-accent/20"
           >

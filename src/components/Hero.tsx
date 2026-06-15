@@ -19,9 +19,9 @@ export function Hero() {
           </span>
         </h1>
         <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-          Full Stack Developer with 3.5+ years specializing in React.js.
-          I build scalable web apps end-to-end — and now I&apos;m diving deep
-          into AI, agentic systems, and LLM-powered products.
+          Full Stack Developer with 3.5+ years specializing in React.js. I build
+          scalable web apps end-to-end — and now I&apos;m diving deep into AI,
+          agentic systems, and LLM-powered products.
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
