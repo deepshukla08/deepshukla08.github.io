@@ -239,31 +239,35 @@
           <div class="job-company">ReelUp — Remote, India</div>
 
           <div class="job-subtitle">
-            ROFY AI — AI Agent for Full Stack Code Generation
+            ROFY AI — AI Coding Agent Platform (Full Stack)
           </div>
           <ul>
             <li>
-              Architected credit-based billing system with Stripe integration,
-              handling usage-based deductions tied to AI generation costs across
-              the platform.
+              Built the core LangGraph agent with 35+ tools (file CRUD, search-replace, package management, environment setup, database connect, web search/fetch, bash execution, screenshot verification) orchestrating Claude Opus 4.7/Sonnet 4.6 with extended thinking and Anthropic prompt caching.
             </li>
             <li>
-              Led a team of 5 developers — delegated tasks, ran sprint meetings,
-              translated business requirements into actionable tickets using
-              GitHub Projects.
+              Developed specialized agent skills: Design Skill (UI/UX direction with brand extraction), Image Generation Skill (FLUX + GPT Image), Screenshot Verify Skill (Gemini Flash vision-based UI validation), Testing Skill (Playwright CLI functional testing with structured pass/fail reports), Security Skill, Web Extract Skill, and Support Skill with RAG.
             </li>
             <li>
-              Built real-time code preview and GitHub sync features, enabling
-              users to view generated code and push directly to repositories.
+              Engineered smart model selector — dynamically routes users between Opus and Sonnet based on task complexity classification (GPT-4.1 Nano), cache state (cold/warm), and cost optimization, saving ~40% on inference costs.
             </li>
             <li>
-              Resolved production SSE streaming issues by implementing
-              persistent connection handling for long-running AI response
-              streams.
+              Built Session Knowledge Graph for token-efficient cold-start recovery — tracks files, errors, requirements, features, decisions, and packages as a structured graph, replacing lossy text summaries when Anthropic cache expires.
             </li>
             <li>
-              Integrated Grafana for distributed tracing and Langfuse for prompt
-              versioning and observability across LLM pipelines.
+              Architected MCP (Model Context Protocol) sandbox server with Kubernetes-based isolated project environments — per-user sandboxes with port allocation, checkpoint/restore, and DigitalOcean Spaces persistence.
+            </li>
+            <li>
+              Built Anthropic prompt cache warmer service — keeps cache alive 24/7 with periodic API calls every 4 minutes, ensuring 90% cheaper cache_read pricing for all users organization-wide.
+            </li>
+            <li>
+              Developed the chat UI with React (Vite): real-time SSE streaming, AgentActivity/AgentTimeline components, CheckpointPanel, PreviewPanel with live app preview, MultiQuestionWizard for human-in-the-loop interrupts, and LogsModal.
+            </li>
+            <li>
+              Built NestJS backend with Firebase auth, Stripe billing (credit-based), GitHub integration (repo sync, push), Novu notifications, team/workspace management, and MCP tool registry.
+            </li>
+            <li>
+              Integrated Grafana for distributed tracing and Langfuse for prompt versioning, cost tracking, and observability across LLM pipelines.
             </li>
           </ul>
 
@@ -272,25 +276,31 @@
           </div>
           <ul>
             <li>
-              Designed and built 6 LangGraph multi-step agent workflows: Unified UGC Generator (storyboard → reference images → keyframes → video), Script Generator (Gemini Vision analysis → script → validation → first-frame gen), Selfie UGC (product analysis → script → GPT Image 2 frame → Kling V3 animation → TTS + lipsync), Talking Head UGC (multi-avatar routing: HeyGen v3, Creatify Aurora, OmniHuman v1.5), Fashion Try-On Video (virtual try-on → garment analysis → script → animation → voiceover).
+              Built 15+ AI-powered tools end-to-end: Multi-Angle Shots, AI
+              Influencer, Image Generation, Video Generation, Voice Cloning,
+              TTS, Music, Sound Effects, Upscaling, Motion Control, Lipsync,
+              Auto Captions, and Ad Creation workflows.
             </li>
             <li>
-              Developed 16 full-page AI tool UIs with Next.js App Router: AI Ad Studio (storyboard review, video carousel, preset panels), AI Fashion Engine (8-step wizard: template → character → garment → pose → backdrop → styling → quality), AI Image Editor (brush-based mask canvas with toolbar), AI Multi-Angle (angle sphere + preview grid), Visual AI Canvas (React Flow node editor with LLM, image, video, and prompt nodes), Video Generation (multi-shot editor with motion control), plus dedicated pages for Influencer, Character Swap, Background Remover, Skin Enhancer, Relighting, and Upscale.
+              Designed Python backend services with Redis queues and ARQ worker
+              pipelines to process long-running generation tasks asynchronously
+              — ensuring reliability and efficient resource utilization at
+              scale.
             </li>
             <li>
-              Integrated 15+ AI providers with intelligent multi-model routing: OpenAI GPT-5.5 & GPT Image 2, Gemini Vision & Flash TTS, Claude (script writing), BytePlus Seedance 2.0 (600 RPM rate-limited), Kling V3 Pro, HeyGen v3, Creatify Aurora, OmniHuman v1.5, Topaz AI, Bria RMBG-2.0, Nano Banana 2/Pro, FLUX 2 Flex, Sync Lipsync v3, and Pinecone vector search.
+              Integrated leading AI models (Flux Pro, GPT Image 2, Kling, Veo,
+              Seedance, ElevenLabs, OpenAI TTS) through Fal.ai and direct
+              provider APIs.
             </li>
             <li>
-              Built generation orchestrator with 20+ async Redis/ARQ workers handling idempotency, per-user concurrency limits, plan-based queue routing, credit reservation with automatic refunds, and SSE-based real-time progress streaming.
+              Implemented lot-based credit system with priority draining,
+              automatic refunds on failure, and real-time balance tracking
+              across teams.
             </li>
             <li>
-              Implemented lot-based credit system with atomic PostgreSQL transactions — priority draining (subscription → topup → promo), overdraft protection, and real-time team-wide balance tracking with Stripe billing integration.
-            </li>
-            <li>
-              Engineered content safety guardrails: NSFW detection, age verification, and celebrity likeness blocking before generation; plus stale job detection and automatic cleanup workers.
-            </li>
-            <li>
-              Built feature-driven frontend architecture with Zustand stores, React Query for server state, WebSocket support for fashion engine real-time updates, and reusable component library (ImageDropzone, MaskCanvas, PromptTextarea, HistoryColumn, SSE streaming hooks).
+              Built generation orchestrator handling idempotency, concurrency
+              limits, queue routing, and SSE-based progress streaming to the
+              frontend.
             </li>
           </ul>
         </div>
