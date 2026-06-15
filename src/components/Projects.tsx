@@ -1,5 +1,20 @@
 const projects = [
   {
+    title: "ROFY AI",
+    description:
+      "AI agent for full-stack code generation — users describe what they want, and ROFY generates complete applications with real-time preview, GitHub sync, and iterative refinement through conversation.",
+    tech: ["React", "Next.js", "Node.js", "LangGraph", "Grafana", "Langfuse"],
+    highlights: [
+      "Led team of 5 developers with sprint planning & GitHub Projects",
+      "Credit-based billing system with Stripe integration",
+      "Real-time SSE streaming for long-running AI responses",
+      "Grafana tracing + Langfuse for LLM observability",
+    ],
+    link: null,
+    github: null,
+    type: "Professional",
+  },
+  {
     title: "ReelUp AI Platform",
     description:
       "AI content generation platform with 15+ tools — image generation, video creation, voice cloning, AI influencers, and more. Handles thousands of async jobs daily via Redis queues and ARQ workers.",
