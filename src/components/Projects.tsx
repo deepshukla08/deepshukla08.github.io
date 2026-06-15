@@ -5,7 +5,7 @@ const projects = [
       "AI coding agent platform — users describe what they want in natural language, and ROFY's LangGraph agent generates complete full-stack applications with real-time preview, GitHub sync, and iterative refinement through conversation.",
     tech: ["React", "NestJS", "Python", "LangGraph", "Kubernetes", "Langfuse"],
     highlights: [
-      "LangGraph agent with 35+ tools (file ops, bash, DB, web search, screenshots)",
+      "LangGraph agent with comprehensive tool suite (file ops, search-replace, bash, DB connect, web search, live screenshots, package management)",
       "6 specialized skills: Design, Image Gen, Screenshot Verify, Testing (Playwright), Security, Support (RAG)",
       "Smart model routing (Opus/Sonnet) based on task complexity + cache state",
       "MCP sandbox server with Kubernetes-isolated environments & checkpoint/restore",
