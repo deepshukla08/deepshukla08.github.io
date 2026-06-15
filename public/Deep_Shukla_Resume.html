@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Shukla - Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        color: #1a1a1a;
+        line-height: 1.5;
+        background: #f0f0f0;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 20px auto;
+        background: white;
+        padding: 40px 48px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+        .page {
+          margin: 0;
+          box-shadow: none;
+          padding: 32px 40px;
+        }
+      }
+
+      /* Header */
+      .header {
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+        border-bottom: 2.5px solid #1a1a1a;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 4px;
+      }
+
+      .header .subtitle {
+        font-size: 13px;
+        color: #444;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 18px;
+        font-size: 12px;
+        color: #333;
+      }
+
+      .contact-row a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .contact-row a:hover {
+        text-decoration: underline;
+      }
+
+      /* Sections */
+      .section {
+        margin-bottom: 18px;
+      }
+
+      .section-title {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #1a1a1a;
+        border-bottom: 1.5px solid #ddd;
+        padding-bottom: 4px;
+        margin-bottom: 12px;
+      }
+
+      /* Summary */
+      .summary p {
+        font-size: 12.5px;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Experience */
+      .job {
+        margin-bottom: 16px;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 2px;
+      }
+
+      .job-title {
+        font-size: 13.5px;
+        font-weight: 700;
+      }
+
+      .job-date {
+        font-size: 11.5px;
+        color: #555;
+        white-space: nowrap;
+      }
+
+      .job-company {
+        font-size: 12.5px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 6px;
+      }
+
+      .job-subtitle {
+        font-size: 12px;
+        font-weight: 600;
+        color: #222;
+        margin-top: 8px;
+        margin-bottom: 4px;
+      }
+
+      .job ul {
+        padding-left: 18px;
+        margin-bottom: 4px;
+      }
+
+      .job li {
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 3px;
+        line-height: 1.5;
+      }
+
+      /* Skills */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 32px;
+      }
+
+      .skill-category {
+        margin-bottom: 6px;
+      }
+
+      .skill-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 2px;
+      }
+
+      .skill-items {
+        font-size: 11.5px;
+        color: #444;
+        line-height: 1.5;
+      }
+
+      /* Education & Certs */
+      .edu-item {
+        margin-bottom: 6px;
+      }
+
+      .edu-title {
+        font-size: 12.5px;
+        font-weight: 600;
+      }
+
+      .edu-detail {
+        font-size: 11.5px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <header class="header">
+        <h1>Deep Shukla</h1>
+        <div class="subtitle">
+          Full Stack Engineer — React, Next.js, Node.js, Python & Agentic AI
+        </div>
+        <div class="contact-row">
+          <span>Ahmedabad, India</span>
+          <span>+91 7405315644</span>
+          <a href="mailto:deepshukla5264@gmail.com">deepshukla5264@gmail.com</a>
+          <a href="https://linkedin.com/in/deep-shukla5264"
+            >linkedin.com/in/deep-shukla5264</a
+          >
+          <a href="https://github.com/deepshukla08">github.com/deepshukla08</a>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section class="section summary">
+        <h2 class="section-title">Summary</h2>
+        <p>
+          Full Stack Engineer with 3.5+ years of experience shipping web,
+          mobile, and AI-powered products. Built and scaled content generation
+          platforms processing thousands of async image, video, and audio jobs
+          daily. Currently focused on agentic AI workflows, LLM-driven
+          applications, and end-to-end product delivery — from database design
+          to production deployment.
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="section">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Full Stack Developer</span>
+            <span class="job-date">Dec 2024 – Present</span>
+          </div>
+          <div class="job-company">ReelUp — Remote, India</div>
+
+          <div class="job-subtitle">
+            ROFY AI — AI Agent for Full Stack Code Generation
+          </div>
+          <ul>
+            <li>
+              Architected credit-based billing system with Stripe integration,
+              handling usage-based deductions tied to AI generation costs across
+              the platform.
+            </li>
+            <li>
+              Led a team of 5 developers — delegated tasks, ran sprint meetings,
+              translated business requirements into actionable tickets using
+              GitHub Projects.
+            </li>
+            <li>
+              Built real-time code preview and GitHub sync features, enabling
+              users to view generated code and push directly to repositories.
+            </li>
+            <li>
+              Resolved production SSE streaming issues by implementing
+              persistent connection handling for long-running AI response
+              streams.
+            </li>
+            <li>
+              Integrated Grafana for distributed tracing and Langfuse for prompt
+              versioning and observability across LLM pipelines.
+            </li>
+          </ul>
+
+          <div class="job-subtitle">
+            REELUP — AI Content Generation Platform
+          </div>
+          <ul>
+            <li>
+              Built 15+ AI-powered tools end-to-end: Multi-Angle Shots, AI
+              Influencer, Image Generation, Video Generation, Voice Cloning,
+              TTS, Music, Sound Effects, Upscaling, Motion Control, Lipsync,
+              Auto Captions, and Ad Creation workflows.
+            </li>
+            <li>
+              Designed Python backend services with Redis queues and ARQ worker
+              pipelines to process long-running generation tasks asynchronously
+              — ensuring reliability and efficient resource utilization at
+              scale.
+            </li>
+            <li>
+              Integrated leading AI models (Flux Pro, GPT Image 2, Kling, Veo,
+              Seedance, ElevenLabs, OpenAI TTS) through Fal.ai and direct
+              provider APIs.
+            </li>
+            <li>
+              Implemented lot-based credit system with priority draining,
+              automatic refunds on failure, and real-time balance tracking
+              across teams.
+            </li>
+            <li>
+              Built generation orchestrator handling idempotency, concurrency
+              limits, queue routing, and SSE-based progress streaming to the
+              frontend.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Front-End Engineer (React.js)</span>
+            <span class="job-date">Nov 2022 – Dec 2024</span>
+          </div>
+          <div class="job-company">Ace Analytics — Ahmedabad</div>
+          <ul>
+            <li>
+              Developed enterprise applications for Australian clients —
+              inventory management, warehouse operations, ordering,
+              distribution, and analytics dashboards using React.js, Next.js,
+              TypeScript, and Redux.
+            </li>
+            <li>
+              Built chat-based insurance platforms and AI-powered chatbot
+              products deployed across web, WhatsApp, and social channels.
+            </li>
+            <li>
+              Optimized rendering performance with React Hooks, memoization, and
+              code-splitting — measurably improving page load times and
+              interaction responsiveness.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Client Relationship Executive</span>
+            <span class="job-date">Aug 2020 – Jan 2022</span>
+          </div>
+          <div class="job-company">Advantmed India LLP — Ahmedabad</div>
+          <ul>
+            <li>
+              Managed communication with U.S.-based insurance clients,
+              coordinated medical record retrieval operations, and resolved
+              client queries with a focus on accuracy and turnaround time.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-label">Frontend</div>
+            <div class="skill-items">
+              React.js, Next.js, React Native, TypeScript, JavaScript, Redux,
+              Zustand, Tailwind CSS, Material UI
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-label">Backend</div>
+            <div class="skill-items">
+              Node.js, Express.js, Python, FastAPI, REST APIs, WebSockets,
+              Microservices
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-label">AI & Agentic Systems</div>
+            <div class="skill-items">
+              LangChain, LangGraph, Multi-Agent Systems, Tool Calling, RAG,
+              OpenAI, Claude, Gemini
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-label">Databases & Infra</div>
+            <div class="skill-items">
+              PostgreSQL, MongoDB, Redis, AWS, Docker, CI/CD, Git, GitHub
+              Actions
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-item">
+          <div class="edu-title">
+            B.Tech, Electronics & Communication Engineering
+          </div>
+          <div class="edu-detail">
+            GH Patel College, Gujarat Technological University — 2020
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="edu-item">
+          <div class="edu-detail">
+            MERN Stack Development — DCT Academy, Bangalore
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests -->
+      <section class="section">
+        <h2 class="section-title">Interests</h2>
+        <div class="edu-item">
+          <div class="edu-detail">
+            Trained Indian Classical Singer · Table Tennis Player
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Auto-trigger print dialog for easy PDF save
+      // Uncomment the line below if you want it to auto-open print:
+      // window.onload = () => setTimeout(() => window.print(), 500);
+    </script>
+  </body>
+</html>
