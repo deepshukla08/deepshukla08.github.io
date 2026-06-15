@@ -2,13 +2,15 @@ const projects = [
   {
     title: "ROFY AI",
     description:
-      "AI agent for full-stack code generation — users describe what they want, and ROFY generates complete applications with real-time preview, GitHub sync, and iterative refinement through conversation.",
-    tech: ["React", "Next.js", "Node.js", "LangGraph", "Grafana", "Langfuse"],
+      "AI coding agent platform — users describe what they want in natural language, and ROFY's LangGraph agent generates complete full-stack applications with real-time preview, GitHub sync, and iterative refinement through conversation.",
+    tech: ["React", "NestJS", "Python", "LangGraph", "Kubernetes", "Langfuse"],
     highlights: [
-      "Led team of 5 developers with sprint planning & GitHub Projects",
-      "Credit-based billing system with Stripe integration",
-      "Real-time SSE streaming for long-running AI responses",
-      "Grafana tracing + Langfuse for LLM observability",
+      "LangGraph agent with 35+ tools (file ops, bash, DB, web search, screenshots)",
+      "6 specialized skills: Design, Image Gen, Screenshot Verify, Testing (Playwright), Security, Support (RAG)",
+      "Smart model routing (Opus/Sonnet) based on task complexity + cache state",
+      "MCP sandbox server with Kubernetes-isolated environments & checkpoint/restore",
+      "Session Knowledge Graph for token-efficient cold-start recovery",
+      "Anthropic prompt cache warmer — 24/7 service for 90% cheaper inference",
     ],
     link: null,
     github: null,
