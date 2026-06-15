@@ -14,8 +14,8 @@ export function About() {
               interfaces, and high-performance apps used by thousands daily.
             </p>
             <p>
-              Now actively building in the AI space — multi-agent systems
-              with LangGraph, LLM-powered products, and intelligent automation.
+              Now actively building in the AI space — multi-agent systems with
+              LangGraph, LLM-powered products, and intelligent automation.
               Combining my full stack foundation with agentic AI.
             </p>
           </div>
