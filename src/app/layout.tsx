@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deep Shukla — Full Stack Engineer & AI Developer",
+  title: "Deep Shukla — React.js Engineer & AI Developer",
   description:
-    "Portfolio of Deep Shukla — building AI-powered products, agentic systems, and scalable web applications.",
+    "Portfolio of Deep Shukla — React.js specialist building scalable web applications and AI-powered agentic systems.",
 };
 
 export default function RootLayout({
