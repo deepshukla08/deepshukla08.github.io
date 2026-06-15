@@ -3,7 +3,7 @@ export function Hero() {
     <section className="flex min-h-screen items-center justify-center px-6 pt-20">
       <div className="mx-auto max-w-4xl text-center">
         <div className="mb-6 inline-block rounded-full border border-card-border bg-card px-4 py-1.5 text-sm text-muted">
-          React.js Engineer · AI &amp; Agentic Systems
+          Full Stack Developer · React.js Specialist · AI Enthusiast
         </div>
         <h1 className="mb-6 text-5xl font-bold leading-tight tracking-tight sm:text-7xl">
           Hi, I&apos;m{" "}

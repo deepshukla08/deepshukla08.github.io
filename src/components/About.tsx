@@ -9,15 +9,14 @@ export function About() {
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4 text-muted leading-relaxed">
             <p>
-              I&apos;m a React.js engineer with 3.5+ years of experience
-              building enterprise-grade web applications — complex dashboards,
-              real-time interfaces, and high-performance SPAs used by thousands
-              daily.
+              I&apos;m a Full Stack Developer with 3.5+ years of experience,
+              specializing in React.js — complex dashboards, real-time
+              interfaces, and high-performance apps used by thousands daily.
             </p>
             <p>
-              Now expanding into AI &amp; agentic systems — building multi-agent
-              workflows with LangGraph, LLM-powered products, and intelligent
-              automation from frontend to backend.
+              Now actively building in the AI space — multi-agent systems
+              with LangGraph, LLM-powered products, and intelligent automation.
+              Combining my full stack foundation with agentic AI.
             </p>
           </div>
           <div className="space-y-4">
