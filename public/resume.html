@@ -268,35 +268,29 @@
           </ul>
 
           <div class="job-subtitle">
-            REELUP — AI Content Generation Platform
+            REELUP — AI Content Generation Platform (Full Stack)
           </div>
           <ul>
             <li>
-              Built 15+ AI-powered tools end-to-end: Multi-Angle Shots, AI
-              Influencer, Image Generation, Video Generation, Voice Cloning,
-              TTS, Music, Sound Effects, Upscaling, Motion Control, Lipsync,
-              Auto Captions, and Ad Creation workflows.
+              Designed and built 6 LangGraph multi-step agent workflows: Unified UGC Generator (storyboard → reference images → keyframes → video), Script Generator (Gemini Vision analysis → script → validation → first-frame gen), Selfie UGC (product analysis → script → GPT Image 2 frame → Kling V3 animation → TTS + lipsync), Talking Head UGC (multi-avatar routing: HeyGen v3, Creatify Aurora, OmniHuman v1.5), Fashion Try-On Video (virtual try-on → garment analysis → script → animation → voiceover).
             </li>
             <li>
-              Designed Python backend services with Redis queues and ARQ worker
-              pipelines to process long-running generation tasks asynchronously
-              — ensuring reliability and efficient resource utilization at
-              scale.
+              Developed 16 full-page AI tool UIs with Next.js App Router: AI Ad Studio (storyboard review, video carousel, preset panels), AI Fashion Engine (8-step wizard: template → character → garment → pose → backdrop → styling → quality), AI Image Editor (brush-based mask canvas with toolbar), AI Multi-Angle (angle sphere + preview grid), Visual AI Canvas (React Flow node editor with LLM, image, video, and prompt nodes), Video Generation (multi-shot editor with motion control), plus dedicated pages for Influencer, Character Swap, Background Remover, Skin Enhancer, Relighting, and Upscale.
             </li>
             <li>
-              Integrated leading AI models (Flux Pro, GPT Image 2, Kling, Veo,
-              Seedance, ElevenLabs, OpenAI TTS) through Fal.ai and direct
-              provider APIs.
+              Integrated 15+ AI providers with intelligent multi-model routing: OpenAI GPT-5.5 & GPT Image 2, Gemini Vision & Flash TTS, Claude (script writing), BytePlus Seedance 2.0 (600 RPM rate-limited), Kling V3 Pro, HeyGen v3, Creatify Aurora, OmniHuman v1.5, Topaz AI, Bria RMBG-2.0, Nano Banana 2/Pro, FLUX 2 Flex, Sync Lipsync v3, and Pinecone vector search.
             </li>
             <li>
-              Implemented lot-based credit system with priority draining,
-              automatic refunds on failure, and real-time balance tracking
-              across teams.
+              Built generation orchestrator with 20+ async Redis/ARQ workers handling idempotency, per-user concurrency limits, plan-based queue routing, credit reservation with automatic refunds, and SSE-based real-time progress streaming.
             </li>
             <li>
-              Built generation orchestrator handling idempotency, concurrency
-              limits, queue routing, and SSE-based progress streaming to the
-              frontend.
+              Implemented lot-based credit system with atomic PostgreSQL transactions — priority draining (subscription → topup → promo), overdraft protection, and real-time team-wide balance tracking with Stripe billing integration.
+            </li>
+            <li>
+              Engineered content safety guardrails: NSFW detection, age verification, and celebrity likeness blocking before generation; plus stale job detection and automatic cleanup workers.
+            </li>
+            <li>
+              Built feature-driven frontend architecture with Zustand stores, React Query for server state, WebSocket support for fashion engine real-time updates, and reusable component library (ImageDropzone, MaskCanvas, PromptTextarea, HistoryColumn, SSE streaming hooks).
             </li>
           </ul>
         </div>
